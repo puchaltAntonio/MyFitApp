@@ -1,6 +1,6 @@
-package com.backend.fitapp.domain.service;
+package com.backend.fitapp.domain.workout.service;
 
-import com.backend.fitapp.domain.model.Workout;
+import com.backend.fitapp.domain.workout.model.Workout;
 
 import java.util.List;
 

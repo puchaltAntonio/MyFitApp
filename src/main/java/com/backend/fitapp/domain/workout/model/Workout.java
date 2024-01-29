@@ -1,5 +1,7 @@
-package com.backend.fitapp.domain.model;
+package com.backend.fitapp.domain.workout.model;
 
+import com.backend.fitapp.domain.user.model.User;
+import com.backend.fitapp.domain.exercise.model.Exercise;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -8,6 +10,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.proxy.HibernateProxy;
 
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -32,9 +35,14 @@ public class Workout {
     @ToString.Exclude
     private User user;
 
-//    @OneToMany(mappedBy = "workout")
-//    @ToString.Exclude
-//    private Set<ExerciseRecord> exerciseRecords;
+    @ManyToMany(fetch = FetchType.EAGER,
+        cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "workout_exercises",
+        joinColumns = {@JoinColumn(name = "workout_id")},
+        inverseJoinColumns = {@JoinColumn(name = "exercise_id")})
+    private Set<Exercise> exerciseSet;
+
+
 
     @Override
     public final boolean equals(Object o) {

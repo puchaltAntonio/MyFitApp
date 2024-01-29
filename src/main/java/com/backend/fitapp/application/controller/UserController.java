@@ -1,7 +1,7 @@
 package com.backend.fitapp.application.controller;
 
-import com.backend.fitapp.domain.model.User;
-import com.backend.fitapp.domain.service.impl.UserServiceImpl;
+import com.backend.fitapp.domain.user.model.User;
+import com.backend.fitapp.domain.user.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

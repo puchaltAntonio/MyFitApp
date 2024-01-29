@@ -1,36 +1,50 @@
-package com.backend.fitapp.domain.model;
+package com.backend.fitapp.domain.exercise.model;
 
+import com.backend.fitapp.domain.workout.model.Workout;
+import com.backend.fitapp.domain.exercise.muscle.Muscle;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.proxy.HibernateProxy;
 
 import java.util.Objects;
-
+import java.util.Set;
 
 @Entity
 @Getter
 @Setter
-@Table(name="users")
+@Table(name="exercises")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class User {
+public class Exercise {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(unique = true)
-    private String username;
+    @Column(nullable = false)
+    private String name;
 
-    @Column(unique = true)
-    private String email;
+    @Column(nullable = false)
+    private Muscle primaryMuscle;
 
+    private Muscle secondaryMuscle;
+
+    @ManyToMany(fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            },
+            mappedBy = "exerciseSet")
     @JsonIgnore
-    private String password;
+    @ToString.Exclude
+    private Set<Workout> workoutsSet;
 
+    @OneToMany(mappedBy = "exercise")
+    @ToString.Exclude
+    Set<ExerciseRecord> exerciseRecords;
 
     @Override
     public final boolean equals(Object o) {
@@ -39,8 +53,8 @@ public class User {
         Class<?> oEffectiveClass = o instanceof HibernateProxy ? ((HibernateProxy) o).getHibernateLazyInitializer().getPersistentClass() : o.getClass();
         Class<?> thisEffectiveClass = this instanceof HibernateProxy ? ((HibernateProxy) this).getHibernateLazyInitializer().getPersistentClass() : this.getClass();
         if (thisEffectiveClass != oEffectiveClass) return false;
-        User user = (User) o;
-        return getId() != null && Objects.equals(getId(), user.getId());
+        Exercise exercise = (Exercise) o;
+        return getId() != null && Objects.equals(getId(), exercise.getId());
     }
 
     @Override

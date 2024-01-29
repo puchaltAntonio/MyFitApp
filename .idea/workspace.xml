@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="377df68b-4ced-4a22-a7c1-7a3a4701abd5" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/ExerciseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/WorkoutSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/model/Exercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/model/ExerciseRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/model/ExerciseSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/muscle/Muscle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/muscle/MuscleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/repository/ExerciseRecordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/repository/ExerciseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/repository/ExerciseSetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/service/ExerciseRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/service/ExerciseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/service/ExerciseSetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/exercise/service/impl/ExerciseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/model/WorkoutSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/repository/WorkoutSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/WorkoutSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/impl/WorkoutSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/fit-app-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/application/controller/WorkoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/user/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/model/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/model/Workout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/repository/WorkoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/repository/WorkoutRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/service/WorkoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/WorkoutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/service/impl/WorkoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/impl/WorkoutServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2b3RiKnMfcP1FQfGl2M6SsYWEeJ" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FitAppApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.fit-app [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.fit-app [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.fit-app [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1111-add-exercise-entity&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;promo.profiler&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="FitAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.backend.fitapp.FitAppApplication" />
+      <module name="fit-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.fitapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FitAppApplication" />
+        <item itemvalue="Application.FitAppApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-249ae16d76d6-e0389a16" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="377df68b-4ced-4a22-a7c1-7a3a4701abd5" name="Changes" comment="Commit" />
+      <created>1705441911017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705441911017</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit" />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/impl/WorkoutSessionServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/backend/fitapp/domain/workout/service/impl/WorkoutSessionServiceImpl.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression=" workout.getExerciseSet().size()" />
+        <watch expression="exerciseSet.size() != workout.getExerciseSet().size()" />
+        <watch expression="session" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

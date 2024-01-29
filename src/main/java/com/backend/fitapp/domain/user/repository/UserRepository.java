@@ -1,6 +1,6 @@
-package com.backend.fitapp.domain.repository;
+package com.backend.fitapp.domain.user.repository;
 
-import com.backend.fitapp.domain.model.User;
+import com.backend.fitapp.domain.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

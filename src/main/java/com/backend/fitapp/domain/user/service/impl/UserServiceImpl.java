@@ -1,8 +1,8 @@
-package com.backend.fitapp.domain.service.impl;
+package com.backend.fitapp.domain.user.service.impl;
 
-import com.backend.fitapp.domain.model.User;
-import com.backend.fitapp.domain.repository.UserRepository;
-import com.backend.fitapp.domain.service.UserService;
+import com.backend.fitapp.domain.user.model.User;
+import com.backend.fitapp.domain.user.repository.UserRepository;
+import com.backend.fitapp.domain.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

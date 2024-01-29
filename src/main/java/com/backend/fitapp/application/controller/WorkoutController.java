@@ -1,8 +1,8 @@
 package com.backend.fitapp.application.controller;
 
-import com.backend.fitapp.domain.model.Workout;
-import com.backend.fitapp.domain.repository.UserRepository;
-import com.backend.fitapp.domain.service.impl.WorkoutServiceImpl;
+import com.backend.fitapp.domain.workout.model.Workout;
+import com.backend.fitapp.domain.user.repository.UserRepository;
+import com.backend.fitapp.domain.workout.service.impl.WorkoutServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +17,6 @@ public class WorkoutController {
 
     @Autowired
     private WorkoutServiceImpl workoutService;
-    @Autowired
-    private UserRepository userRepository;
 
     @GetMapping("/all")
     public @ResponseBody ResponseEntity<List<Workout>> getAllWorkouts(){
@@ -36,10 +34,13 @@ public class WorkoutController {
     }
 
     @PostMapping(path = "/users/{userId}/workouts")
-    public @ResponseBody ResponseEntity<Workout> addNewWorkout (@PathVariable Long userId, @RequestBody Workout workout){
-        return new ResponseEntity<>(workoutService.addWorkoutToUser(workout, userId), HttpStatus.CREATED);
+    public @ResponseBody ResponseEntity<Workout> addNewWorkout (@PathVariable Long userId, @RequestBody Workout workout) {
+        Workout newWorkout = workoutService.addWorkoutToUser(workout, userId);
+        if (newWorkout != null) {
+            return new ResponseEntity<>(newWorkout, HttpStatus.CREATED);
+        }
+        return  new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
-
     @PutMapping(path = "/workouts/{workoutId}")
     public @ResponseBody ResponseEntity<Workout> modifyWorkout(@PathVariable Long workoutId, @RequestBody Workout workout){
         return new ResponseEntity<>(workoutService.modifyWorkout(workout, workoutId), HttpStatus.OK);
